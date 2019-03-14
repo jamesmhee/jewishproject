@@ -27,6 +27,15 @@
 	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/>
  
 </head>
+<style>
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+</style>
 <body class="slides chain simplifiedMobile animated">
 		
 <!-- SVG Library -->
@@ -124,7 +133,8 @@
       </div>
     </div>
   </div>
-  <video src="assets/img/background/bgvideo.mp4" playsinline autoplay loop width="100%"></video>
+  <video autoplay loop id="myVideo">
+    <source src="assets/img/background/bgvideo.mp4" type="video/mp4">
 </section>
 
 <!-- Slide 2 (#75) -->
@@ -170,23 +180,23 @@
           <ul class="flex fixedSpaces later left">
             <li class="col-3-12 col-tablet-1-2 col-phone-1-1">
               <div class="button rounded empty margin-bottom-2 videoThumbnail noShadow popupTrigger ae-3" data-popup-id="90-2"><img class="wide" src="assets/img/spee1.jpg" alt="Video Thumbnail"/></div>
-              <h3 class="ae-3"><center>การปราศัยในปี 1933</h3></center>
+              <h3 class="ae-3"><center>การปราศัยที่พูดถึงชาวยิวในปี 1933</h3></center>
               <center><div class="ae-3"><p class="tiny opacity-6">Ref : Wikipedia</p></div></center>
             </li>
             <li class="col-3-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-4"><img class="wide" src="assets/img/gallery-90-2.jpg" alt="Image Thumbnail"/></a>
-              <h3 class="ae-3">กบ</h3>
-              <div class="ae-3"><p class="tiny opacity-6">You don’t have to be “a creative” to be creative.</p></div>
+              <div class="button rounded empty margin-bottom-2 imageThumbnail noShadow popupTrigger ae-3" data-popup-id="90-3"><img class="wide" src="assets/img/totalelection.jpg" alt="imageThumbnail Thumbnail"/></div>
+              <h3 class="ae-3"><center>ผลการเลือกตั้งของพรรคนาซี</h3></center>
+              <center><div class="ae-3"><p class="tiny opacity-6">Ref : Wikipedia</p></div></center>
             </li>
             <li class="col-3-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-5"><img class="wide" src="assets/img/gallery-90-3.jpg" alt="Image Thumbnail"/></a>
-              <h3 class="ae-3">Fashion</h3>
-              <div class="ae-3"><p class="tiny opacity-6">There is no such thing as simple. Simple is hard.</p></div>
+              <div class="button rounded empty margin-bottom-2 videoThumbnail noShadow popupTrigger ae-3" data-popup-id="90-4"><img class="wide" src="assets/img/spee1.jpg" alt="Video Thumbnail"/></div>
+              <h3 class="ae-3"><center>การปราศัยที่พูดถึงชาวยิวในปี 1933</h3></center>
+              <center><div class="ae-3"><p class="tiny opacity-6">Ref : Wikipedia</p></div></center>
             </li>
             <li class="col-3-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-6"><img class="wide" src="assets/img/gallery-90-4.jpg" alt="Image Thumbnail"/></a>
-              <h3 class="ae-3">Photography</h3>
-              <div class="ae-3"><p class="tiny opacity-6">Design makes what was once impossible possible.</p></div>
+              <div class="button rounded empty margin-bottom-2 videoThumbnail noShadow popupTrigger ae-3" data-popup-id="90-5"><img class="wide" src="assets/img/spee1.jpg" alt="Video Thumbnail"/></div>
+              <h3 class="ae-3"><center>การปราศัยที่พูดถึงชาวยิวในปี 1933</h3></center>
+              <center><div class="ae-3"><p class="tiny opacity-6">Ref : Wikipedia</p></div></center>
             </li>
           </ul>
         </div>
@@ -215,78 +225,80 @@
   </div>
 </div>
 
+<!-- image1 Video -->
+<div class="popup autoplay" data-popup-id="90-3">
+  <div class="close"><svg>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+    </svg></div>
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="fix-10-12">
+          <div class="embedImage popupContent">
+            <img src="assets/img/totalelection.jpg" width="100%" height="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- image2 Video -->
+<div class="popup autoplay" data-popup-id="90-4">
+  <div class="close"><svg>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+    </svg></div>
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="fix-10-12">
+          <div class="embedImage popupContent">
+            <img src="assets/img/hit2.jpg" width="100%" height="100%">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- image3 Video -->
+<div class="popup autoplay" data-popup-id="90-5">
+  <div class="close"><svg>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+    </svg></div>
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="fix-10-12">
+          <div class="embedImage popupContent">
+            <img src="assets/img/hit2.jpg" width="100%" height="100%">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Slide 4 (#74) -->
 <section class="slide fade-6 kenBurns">
   <div class="content">
     <div class="container">
       <div class="wrap">
-      
+
         <div class="fix-10-12 toCenter">
-          <h1 class="ae-1">Simply Complicated</h1>
-          <p class="ae-2"><span class="opacity-8">Creativity often consists of merely turning up what is already there. Did you know that right and left shoes were thought up only a little more than a century ago?</span></p>
+          <h1 class="ae-1">ทำไมต้องชาวยิว ?</h2>
+          <h2 class="ae-3">10 เหตุผลสันนิษฐานว่าทำไมชาวยิวถึงถูกฆ่า</h2>
         </div>
-        <div class="fix-12-12">  
-          <ul class="grid grid-74 later equal margin-top-5">
-            <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-3 fromCenter">
-              <a href="#" class="box-74">
-                <div class="thumbnail-74">
-                  <img src="assets/img/gallery-74-1.jpg" class="wide" alt="Thumbnail"/>
-                </div>
-                <div class="name-74 equalElement table wide">
-                  <div class="cell left top">
-                    <h3 class="">Inspiration</h3>
-                    <p class="tiny opacity-6 cropBottom">Creativity is allowing yourself to make&nbsp;mistakes.</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-4 fromCenter">
-              <a href="#" class="box-74">
-                <div class="thumbnail-74">
-                  <img src="assets/img/gallery-74-2.jpg" class="wide" alt="Thumbnail"/>
-                </div>
-                <div class="name-74 equalElement table wide">
-                  <div class="cell left top">
-                    <h3 class="">The Moment</h3>
-                    <p class="tiny opacity-6 cropBottom">A person tends to critique a design in one of several&nbsp;ways.</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-5 fromCenter">
-              <a href="#" class="box-74">
-                <div class="thumbnail-74">
-                  <img src="assets/img/gallery-74-3.jpg" class="wide" alt="Thumbnail"/>
-                </div>
-                <div class="name-74 equalElement table wide">
-                  <div class="cell left top">
-                    <h3 class="">Journey</h3>
-                    <p class="tiny opacity-6 cropBottom">More designers should share space, share&nbsp;resources.</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-5 fromCenter">
-              <a href="#" class="box-74">
-                <div class="thumbnail-74">
-                  <img src="assets/img/gallery-74-4.jpg" class="wide" alt="Thumbnail"/>
-                </div>
-                <div class="name-74 equalElement table wide">
-                  <div class="cell left top">
-                    <h3 class="">Colorado</h3>
-                    <p class="tiny opacity-6 cropBottom">An essential aspect of creativity is not being afraid to&nbsp;fail.</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
+        <div class="fix-12-12">
         </div>
-                
+
       </div>
     </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/background/img-74.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/whyjew.jpg)"></div>
 </section>
 
 <!-- Slide 5 (#57) -->
